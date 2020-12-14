@@ -147,12 +147,12 @@ a:hover {
   }
 
   a:hover {
-    transform: scale(1.4);
+    transform: scale(1.25);
     z-index: 1000;
     background: #ffffff;
     color: rgb(12, 0, 0);
     opacity: 1;
-    border-radius: 50px;
+    border-radius: 5px;
   }
 
   ul li a:before {
