@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio Website</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -21,28 +21,114 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              1200,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
   </head>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
   </style>
   <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars ham"></i>
-      </label>
-      <label class="logo">
-        <img class="logopic" src="logo2.png" alt="" />
-      </label>
-      <ul>
-        <li data-text="About" class="opac"><a href="#">About</a></li>
-        <li data-text="Skills" class="opac"><a href="#">Skills</a></li>
-        <li data-text="Projects" class="opac"><a href="#">Projects</a></li>
-        <li data-text="Testimonials" class="opac">
-          <a href="#">Testimonials</a>
-        </li>
-        <li data-text="Contact" class="opac"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <section>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars ham"></i>
+        </label>
+        <label class="logo">
+          <img class="logopic" src="logo2.png" alt="" />
+        </label>
+        <ul>
+          <li data-text="About" class="opac active">
+            <a href="#about-section">About</a>
+          </li>
+          <li data-text="Skills" class="opac">
+            <a href="#">Skills</a>
+          </li>
+          <li data-text="Projects" class="opac"><a href="#">Projects</a></li>
+          <li data-text="Testimonials" class="opac">
+            <a href="#">Testimonials</a>
+          </li>
+          <li data-text="Contact" class="opac"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!--
+    <div class="about-container">
+      
+      <img src="Aboutpic.png" />
+      
+      <div class="about-text">
+        <p>About Me</p>
+        <p>Devolper & Designer</p>
+        <p>
+          Hello,My name is Touseeq Ijaz. I am a Devolper and also a Designer.If
+          you have asany Project or if you want make a software for your bisnes
+          conatact me.I make as soon as possibale.You really like my work,if you
+          don&#8217;t i change this until you like I give you seticfaction
+          result.
+        </p>
+        <p>
+          I am a Devolper and also a Designer.If you have asany Project or if
+          you want make a software for your bussniess conatact me.I make your
+          project as soon as possible.
+        </p>
+        <button>Hire Me</button>
+        <button>Download CV</button>
+      </div>
+    </div>
+  -->
+      <div class="text-container">
+        <p>Hello,</p>
+        <p>I'm Sharannyo</p>
+        <p>I am a Software Engineer and Designer</p>
+        <button class="hire-btn">Hire Me</button>
+        <button class="down-cv">Download CV</button>
+      </div>
+      <img src="m1.png" alt="model" class="model" />
+    </section>
+    <div class="about-container" id="about-section">
+      <img src="Aboutpic.png" alt="" />
+      <div class="about-text">
+        <p>About Me</p>
+        <p>A few words</p>
+        <p>
+          Hello, my name is Sharannyo Basu. I am a Web Developer and also a
+          designer. Born and brought up in Kolkata, I'm an ambitious individual
+          with a desire to succeed at all costs. A Machine Learning enthusiast
+          with an additional knack in Web Development. A confident public
+          speaker possessing intermediate leadership and management qualities. A
+          football fanatic. A student who like to take risks and does not shy
+          away from experimenting various combinations in life. Striving to be
+          the best of the lot. Wish me good luck 🙏🏼
+        </p>
+        <button>Hire Me</button>
+        <button>Download CV</button>
+      </div>
+    </div>
   </body>
 </html>

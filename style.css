@@ -1,6 +1,6 @@
 body {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23000000' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+
   font-family: "Montserrat", sans-serif;
 }
 
@@ -15,10 +15,12 @@ body {
 nav {
   height: 80px;
   width: 100%;
+  background-color: #fff;
+  z-index: 1000000;
+  position: fixed;
 }
 
 .logo {
-  color: #4f0086;
   font-size: 35px;
   line-height: 80px;
   padding: 2 80px;
@@ -40,23 +42,25 @@ nav ul li {
   line-height: 80px;
   font-weight: 700;
   margin: 0 15px;
-  color: #000000;
+
+  z-index: 1;
 }
 
 nav ul li a {
-  color: #000000;
+  color: #919191;
   font-size: 17px;
   padding: 20px 13px;
   transition: 0.1s ease;
 }
-
-a active,
+a:active,
 a:hover {
   text-decoration: none;
-  color: #000000;
-  transform: scale(1.4);
-  transition: 0.5s ease-out;
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
+  transition: 0.2s ease-out;
   font-weight: 700;
+  opacity: 1;
+  z-index: 1;
 }
 
 .checkbtn {
@@ -74,6 +78,9 @@ a:hover {
     font-size: 16px;
   }
 }
+nav {
+  position: fixed;
+}
 
 .logopic {
   height: 50px;
@@ -82,14 +89,21 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 858px) {
+@media (max-width: 1000px) {
   .checkbtn {
     display: block;
   }
+  body {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23000000' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-family: "Montserrat", sans-serif;
+  }
   nav {
-    min-height: 100vh;
+    max-height: 100vh;
     background-color: #fff;
     overflow: hidden;
+    z-index: 1000000;
+    position: fixed;
   }
   ul {
     padding-top: 200px;
@@ -117,18 +131,19 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    pointer-events: none;
     font-size: 5em;
     font-weight: 700;
-    pointer-events: none;
+
     opacity: 0;
-    letter-spacing: 20px;
+    letter-spacing: 80px;
     transition: 0.5s;
     white-space: nowrap;
   }
 
   nav ul li:hover:before {
     opacity: 0.1;
-    letter-spacing: 0px;
+    letter-spacing: 7px;
   }
   .logopic {
     height: 40px;
@@ -145,7 +160,7 @@ a:hover {
     transition: 0.5s;
     z-index: 1;
   }
-
+  a:active,
   a:hover {
     transform: scale(1.25);
     z-index: 1000;
@@ -178,5 +193,128 @@ a:hover {
   }
   #check:checked ~ ul {
     left: 0;
+    z-index: 10000;
   }
+}
+
+section {
+  width: 100%;
+  height: 95vh;
+  background-image: url(bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.text-container p:nth-child(1) {
+  font-weight: 600;
+  color: #8d8d8d;
+  font-size: 22px;
+}
+
+.text-container p:nth-child(2) {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #000000;
+  font-size: 70px;
+}
+
+.text-container p:nth-child(3) {
+  font-weight: 600;
+
+  color: #8d8d8d;
+  font-size: 20px;
+}
+
+.text-container p {
+  line-height: 0px;
+  margin: 45px 0px 25px;
+}
+.text-container {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%, -42%);
+}
+.text-container button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  outline: none;
+  margin-right: 20px;
+}
+.hire-btn {
+  border: 2px solid#000000;
+  color: #000000;
+}
+.down-cv {
+  border: 2px solid#000000;
+  color: #000000;
+}
+button:active {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+.model {
+  height: 80%;
+  position: absolute;
+  bottom: 0px;
+
+  left: 70%;
+  transform: translateX(-70%);
+}
+
+.about-container {
+  width: 80%;
+  height: 470px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -3% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-container img {
+  height: 400px;
+}
+.about-text {
+  width: 550px;
+}
+.about-text p:nth-child(1) {
+  color: #000000;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 0px;
+  margin-top: 20px;
+}
+
+.about-text p:nth-child(2) {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 5px;
+}
+
+.about-text p:nth-child(3),
+.about-text p:nth-child(4) {
+  color: #5e5e5e;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.about-text button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #000000;
+  color: #fff;
 }
