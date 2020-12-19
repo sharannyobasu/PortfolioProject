@@ -215,7 +215,7 @@ section {
 .text-container p:nth-child(2) {
   font-weight: bold;
   letter-spacing: 1px;
-  color: #000000;
+  color: #191919;
   font-size: 70px;
 }
 
@@ -245,13 +245,27 @@ section {
   margin-right: 20px;
 }
 .hire-btn {
-  border: 2px solid#000000;
-  color: #000000;
+  background-color: #191919;
+  color: #fff;
+  border: none;
+  text-decoration: none;
 }
 .down-cv {
-  border: 2px solid#000000;
-  color: #000000;
+  background-color: #191919;
+  color: #fff;
+  border: none;
+  text-decoration: none;
 }
+.down-cv a {
+  color: #fff;
+}
+
+.text-container button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
 button:active {
   transform: scale(1.1);
   transition: 0.3s ease;
@@ -285,7 +299,7 @@ button:active {
   width: 550px;
 }
 .about-text p:nth-child(1) {
-  color: #000000;
+  color: #191919;
   font-weight: 800;
   font-size: 32px;
   line-height: 0px;
@@ -315,7 +329,7 @@ button:active {
   font-size: 15px;
   margin-top: 20px;
   margin-right: 20px;
-  background-color: #000000;
+  background-color: #191919;
   color: #fff;
 }
 
@@ -438,4 +452,40 @@ button:active {
 
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+}
+
+.contact-me {
+  width: 100%;
+  height: 280px;
+  background-color: #121212;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me p {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+}
+
+.contact-button {
+  padding: 10px 15px;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.contact-button:hover {
+  background-color: #fff;
+  color: #000000;
+  transition: 0.3s ease;
+  transform: scale(1.1);
 }
