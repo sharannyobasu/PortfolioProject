@@ -221,7 +221,6 @@ section {
 
 .text-container p:nth-child(3) {
   font-weight: 600;
-
   color: #8d8d8d;
   font-size: 20px;
 }
@@ -475,7 +474,7 @@ button:active {
 
 .contact-button {
   padding: 10px 15px;
-  margin-top: 30px;
+  margin-top: 20px;
   border: 2px solid #fff;
   border-radius: 5px;
   font-weight: 800;
@@ -596,23 +595,29 @@ footer p:nth-child(2) {
     border-radius: 10px;
   }
   .about-container img {
-    height: 200px;
+    height: 400px;
   }
   .about-text {
     width: 400px;
   }
   .about-text p:nth-child(1) {
-    font-size: 20px;
+    font-size: 30px;
   }
   .about-text p:nth-child(2) {
     font-size: 10px;
+    width: 100px;
+    display: none;
   }
   .about-text p:nth-child(3),
   .about-text p:nth-child(4) {
     font-size: 14px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .services {
     padding: 2% 5% 0px 5%;
+    text-align: center;
   }
   .box-container {
     justify-content: center;
@@ -626,12 +631,15 @@ footer p:nth-child(2) {
   .box-3 {
     flex-grow: 1;
     margin: 10px;
+    height: 363px;
+    width: auto;
   }
   .contact-me {
-    height: 200px;
+    width: 100%;
   }
   .contact-me p {
     font-size: 26px;
+    margin-bottom: 20px;
   }
   .contact-me button {
     font-size: 14px;
@@ -649,9 +657,12 @@ footer p:nth-child(2) {
     display: none;
   }
   .text-container p:nth-child(2) {
-    line-height: 40px;
-    margin: 0px;
+    margin-top: 55px;
+    margin-bottom: 0px;
     padding: 0px;
+  }
+  .text-container p:nth-child(3) {
+    line-height: 25px;
   }
   .text-container {
     top: 50%;
