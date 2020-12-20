@@ -216,7 +216,7 @@ section {
   font-weight: bold;
   letter-spacing: 1px;
   color: #191919;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .text-container p:nth-child(3) {
@@ -532,6 +532,7 @@ footer p:nth-child(2) {
   left: 50%;
   bottom: 10px;
   transform: translateX(-50%);
+  align-items: center;
 }
 .social-icons i {
   color: #000;
@@ -554,7 +555,7 @@ footer p:nth-child(2) {
   position: fixed;
   top: 50%;
   right: 0px;
-  transform: translateY(-50%);
+  transform: translateY(0%);
 }
 
 .a-social-b a {
@@ -594,8 +595,11 @@ footer p:nth-child(2) {
     width: 90%;
     border-radius: 10px;
   }
+  .about-container button {
+    margin-right: 0px;
+  }
   .about-container img {
-    height: 400px;
+    height: 300px;
   }
   .about-text {
     width: 400px;
@@ -605,15 +609,12 @@ footer p:nth-child(2) {
   }
   .about-text p:nth-child(2) {
     font-size: 10px;
-    width: 100px;
+
     display: none;
   }
   .about-text p:nth-child(3),
   .about-text p:nth-child(4) {
     font-size: 14px;
-    width: 380px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .services {
     padding: 2% 5% 0px 5%;
@@ -645,6 +646,28 @@ footer p:nth-child(2) {
     font-size: 14px;
     height: 35px;
     width: 160px;
+  }
+  .a-social-b a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  }
+  .a-social-b {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  .copyright {
+    text-align: center;
   }
 }
 
@@ -697,5 +720,21 @@ footer p:nth-child(2) {
   }
   footer p:nth-child(2) {
     width: 90%;
+  }
+  .a-social-b a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  }
+  .copyright {
+    text-align: center;
   }
 }
