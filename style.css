@@ -648,8 +648,8 @@ footer p:nth-child(2) {
 
 @media (max-width: 750px) {
   section {
+    height: 500px;
     background-image: none;
-    background-color: #f7f7f7;
   }
   .model {
     display: none;
