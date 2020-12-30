@@ -49,11 +49,16 @@
           } // End if
         });
       });
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
     </script>
   </head>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
   </style>
+
   <body>
     <section>
       <nav>
@@ -118,14 +123,15 @@
           ><button class="down-cv">Download CV</button></a
         >
       </div>
-      <img src="m2.png" alt="model" class="model" />
+      <img src="Myself.png" alt="model" class="model" />
       <div class="dropdown" id="firstdown">
         <a href="#about-section"><img src="downarrow.svg" alt="" /></a>
       </div>
     </section>
 
     <div class="about-container" id="about-section">
-      <img src="Aboutpic.png" id="aboutimg" alt="" />
+      <img src="Ring.png" id="aboutimg" alt="" />
+
       <div class="about-text" id="abouttext">
         <p>About Me</p>
         <p>A few words</p>
@@ -139,7 +145,7 @@
           away from experimenting various combinations in life. Striving to be
           the best of the lot. Wish me good luck 🙏🏼
         </p>
-        <button>Hire Me</button>
+
         <button>Download CV</button>
       </div>
     </div>
@@ -226,13 +232,14 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-medium"></i></a>
       </div>
-      <p class="copyright">Copyright by Sharannyo Basu</p>
+      <p class="copyright">Created with 💙 by Sharannyo Basu</p>
     </footer>
     <div class="a-social-b">
+      <a href="#"><i class="far fa-sun"></i></a>
       <a href="#"><i class="fab fa-linkedin"></i></a>
       <a href="#"><i class="fab fa-github"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-medium"></i></a>
+      <a onclick="myFunction()"><i class="fab fa-medium"></i></a>
     </div>
   </body>
 </html>
