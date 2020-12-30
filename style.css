@@ -613,7 +613,7 @@ footer p:nth-child(2) {
   display: none;
 }
 .dropdown {
-  color: #ff8ae2;
+  color: #4c75f2;
   display: none;
 }
 
@@ -747,10 +747,10 @@ footer p:nth-child(2) {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     display: block;
-    background-color: #ff8ae2;
+    background-color: #4c75f2;
   }
   .text-container button:hover {
-    background-color: #ff8ae2;
+    background-color: #4c75f2;
   }
   .text-container p:nth-child(1) {
     text-align: center;
@@ -810,7 +810,7 @@ footer p:nth-child(2) {
     padding: 0px;
     margin: 0px;
     line-height: 0px;
-    background-color: #93c2db;
+    background-color: #272727;
     border: 1px solid #ffff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   }
