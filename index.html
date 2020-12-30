@@ -49,10 +49,6 @@
           } // End if
         });
       });
-      function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-      }
     </script>
   </head>
   <style>
@@ -80,7 +76,9 @@
           <li data-text="Testimonials" class="opac">
             <a href="#">Testimonials</a>
           </li>
-          <li data-text="Contact" class="opac"><a href="#">Contact</a></li>
+          <li data-text="Contact" class="opac">
+            <a href="#footer">Contact</a>
+          </li>
         </ul>
       </nav>
       <!--
@@ -221,14 +219,18 @@
       <span class="contact-button">Contact Me</span>
     </div>
   -->
-    <footer>
+    <footer id="footer">
       <p>Sharannyo Basu</p>
       <p>
         You can also follow me on the following platforms. Go and have a look !
       </p>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sharannyobasu/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/sharannyobasu"
+          ><i class="fab fa-github"></i
+        ></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-medium"></i></a>
       </div>
@@ -236,10 +238,14 @@
     </footer>
     <div class="a-social-b">
       <a href="#"><i class="far fa-sun"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sharannyobasu/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://github.com/sharannyobasu"
+        ><i class="fab fa-github"></i
+      ></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
-      <a onclick="myFunction()"><i class="fab fa-medium"></i></a>
+      <a onclick="myFunction()" href="#"><i class="fab fa-medium"></i></a>
     </div>
   </body>
 </html>
