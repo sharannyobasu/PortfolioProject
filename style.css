@@ -57,7 +57,7 @@ nav ul li a {
 a:active,
 a:hover {
   text-decoration: none;
-  color: #4c75f2;
+  color: #00a1ff;
   transform: scale(1.1);
   transition: 0.2s ease-out;
   font-weight: 500;
@@ -91,7 +91,7 @@ a:hover {
 @media (max-width: 1000px) {
   .checkbtn {
     display: block;
-    color: rgb(76 117 242);
+    color: #00a1ff;
   }
   body {
     background-color: #121212;
@@ -167,7 +167,7 @@ a:hover {
   a:hover {
     transform: scale(1.25);
     z-index: 1000;
-    background: rgb(76 117 242);
+    background: #00a1ff;
     color: #fff;
     opacity: 1;
     border-radius: 5px;
@@ -218,7 +218,7 @@ section {
 .text-container p:nth-child(2) {
   font-weight: bold;
   letter-spacing: 3px;
-  color: rgb(76 117 242);
+  color: #00a1ff;
   font-size: 60px;
   font-weight: 800;
   line-height: 30px;
@@ -255,7 +255,7 @@ section {
   text-decoration: none;
 }
 .down-cv {
-  background-color: #3756b3;
+  background-color: #00a1ff;
   color: #fff;
   border: none;
   text-decoration: none;
@@ -264,7 +264,7 @@ section {
 
 .text-container button:hover {
   color: #fff;
-  background-color: rgb(76, 117, 242);
+  background-color: #00a1ff;
   transition: 0.3s ease;
 }
 
@@ -273,7 +273,7 @@ button:active {
   transition: 0.3s ease;
 }
 .model {
-  height: 80%;
+  height: 75%;
   position: absolute;
 
   left: 80%;
@@ -300,7 +300,7 @@ button:active {
   width: 550px;
 }
 .about-text p:nth-child(1) {
-  color: rgb(76 117 242);
+  color: #00a1ff;
   font-weight: 800;
   font-size: 32px;
   line-height: 0px;
@@ -331,11 +331,11 @@ button:active {
   font-size: 15px;
   margin-top: 20px;
   margin-right: 20px;
-  background-color: #3756b3;
+  background-color: #00a1ff;
   color: #fff;
 }
 .about-text button:hover {
-  background-color: rgb(76 117 242);
+  background-color: #00a1ff;
   color: #fff;
   transition: 0.3s ease;
 }
@@ -348,7 +348,7 @@ button:active {
 
 .services-text p:nth-child(1) {
   font-weight: 800;
-  color: #4c75f2;
+  color: #00a1ff;
   font-size: 32px;
   line-height: 0px;
 }
@@ -412,7 +412,7 @@ button:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4c75f2;
+  background-color: #00a1ff;
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -423,7 +423,7 @@ button:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4c75f2;
+  background-color: #00a1ff;
   display: flex;
   justify-content: center;
   font-weight: 800;
@@ -434,7 +434,7 @@ button:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4c75f2;
+  background-color: #00a1ff;
   display: flex;
   justify-content: center;
   font-weight: 800;
@@ -472,13 +472,13 @@ button:active {
   font-size: 14px;
   text-transform: uppercase;
 
-  background-color: #3756b3;
+  background-color: #00a1ff;
   color: #fff;
 }
 .box-1 button:hover,
 .box-2 button:hover,
 .box-3 button:hover {
-  background-color: rgb(76 117 242);
+  background-color: #00a1ff;
   transition: 0.2s ease;
   font-weight: 700;
 }
@@ -549,17 +549,17 @@ footer p:nth-child(2) {
   justify-content: center;
   align-items: center;
   background-color: #a6a6a6;
-  color: rgb(76, 117, 242);
+  color: #00a1ff;
   margin: 20px 10px;
   border-radius: 50px;
 }
 
 .social-icons {
   display: flex;
-  color: rgb(76, 117, 242);
+  color: #00a1ff;
 }
 .copyright {
-  color: rgb(76 117 242);
+  color: #00a1ff;
   font-size: 12px;
   font-weight: 500;
   position: absolute;
@@ -613,7 +613,7 @@ footer p:nth-child(2) {
   display: none;
 }
 .dropdown {
-  color: #4c75f2;
+  color: #00a1ff;
   display: none;
 }
 
@@ -747,10 +747,10 @@ footer p:nth-child(2) {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     display: block;
-    background-color: #4c75f2;
+    background-color: #00a1ff;
   }
   .text-container button:hover {
-    background-color: #4c75f2;
+    background-color: #00a1ff;
   }
   .text-container p:nth-child(1) {
     text-align: center;
