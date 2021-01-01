@@ -275,7 +275,7 @@ button:active {
 .model {
   height: 75%;
   position: absolute;
-
+  top: 14%;
   left: 80%;
   transform: translateX(-70%);
 }
