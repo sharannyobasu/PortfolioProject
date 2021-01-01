@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
+    <link rel="icon" href="Favicon.png" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -22,6 +23,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  </script>
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script>
       $(document).ready(function () {
         // Add smooth scrolling to all links
@@ -147,6 +153,30 @@
         <button>Download CV</button>
       </div>
     </div>
+    <div class="counter-up">
+      <div class="content">
+        <div class="box">
+          <div class="icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="counter">15+</div>
+          <div class="text">Projects</div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <div class="counter">100k+</div>
+          <div class="text">Productive lines of Code</div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="counter">3</div>
+          <div class="text">Talks given</div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-book-reader"></i></div>
+          <div class="counter">25+</div>
+          <div class="text">Students mentored</div>
+        </div>
+      </div>
+    </div>
     <div class="services">
       <div class="services-text">
         <p>Projects</p>
@@ -158,6 +188,7 @@
           do bigger projects in the future.
         </p>
       </div>
+      <div class="misc"></div>
       <div class="box-container">
         <div class="box-1">
           <span>1</span>
@@ -250,5 +281,13 @@
     <div class="arrow-btn">
       <a href="#first"><span class="fas fa-angle-up"></span></a>
     </div>
+    <script>
+      $(document).ready(function () {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1200,
+        });
+      });
+    </script>
   </body>
 </html>

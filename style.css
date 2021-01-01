@@ -340,6 +340,56 @@ button:active {
   transition: 0.3s ease;
 }
 
+.counter-up {
+  min-height: 50vh;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.counter-up::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.counter-up .content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter-up .content .box {
+  width: calc(25% - 0px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 10px;
+}
+.content .box .icon {
+  font-size: 68px;
+  color: #00a1ff;
+}
+.content .box .counter {
+  font-size: 70px;
+  font-weight: 700;
+  color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+}
+.content .box .text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #00a1ff;
+}
+
 .services {
   height: 950px;
 
@@ -363,7 +413,7 @@ button:active {
   color: #fff;
 }
 .services-text {
-  width: 1000px;
+  width: 100%;
   margin: 50px 0px;
 }
 
@@ -646,6 +696,7 @@ footer p:nth-child(2) {
   }
   .about-container button {
     margin-right: 0px;
+    margin-bottom: 30px;
   }
   .about-container img {
     height: 200px;
@@ -655,6 +706,8 @@ footer p:nth-child(2) {
   }
   .about-text p:nth-child(1) {
     font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
   }
   .about-text p:nth-child(2) {
     font-size: 10px;
@@ -665,12 +718,23 @@ footer p:nth-child(2) {
   .about-text p:nth-child(4) {
     font-size: 14px;
   }
+
+  .counter-up {
+    padding: 50px 50px 0 50px;
+  }
+
+  .counter-up .content .box {
+    width: calc(50% - 30px);
+    margin-bottom: 50px;
+  }
+
   .services {
     padding: 2% 5% 0px 5%;
   }
   .box-container {
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: -47px;
   }
   .services {
     height: auto;
@@ -778,10 +842,30 @@ footer p:nth-child(2) {
   }
   .about-text {
     width: 90%;
-    text-align: center;
+  }
+  .counter-up .content .box {
+    width: 100%;
+  }
+  .counter-up {
+    padding: 30px 20px 0 20px;
   }
   .services-text {
     width: 100%;
+  }
+  .services-text p:nth-child(1) {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .services-text p:nth-child(3) {
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .misc {
+    height: 30px;
   }
   .contact-me {
     height: 180px;
