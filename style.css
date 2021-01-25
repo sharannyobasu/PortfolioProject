@@ -1,7 +1,16 @@
+:root {
+  --orange: #fb8122;
+  --bgcolor: #1d2228;
+  --darkbgcolor: #283038;
+  --secondary: #ababab;
+  --lightbgcolor: #2c343d;
+}
+
 body {
-  background-color: #121212;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
-  font-family: "Poppins", sans-serif;
+  background-color: #1d2228;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23fb8122' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -24,7 +33,7 @@ nav {
   line-height: 80px;
   padding: 2 80px;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .logopic {
@@ -46,21 +55,22 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #a6a6a6;
+  color: var(--secondary);
   font-size: 14px;
   padding: 20px 13px;
   transition: 0.1s ease;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 a:active,
 a:hover {
   text-decoration: none;
-  color: #00a1ff;
+  color: var(--orange);
   transform: scale(1.1);
   transition: 0.2s ease-out;
-  font-weight: 500;
+  font-weight: 600;
   opacity: 1;
   z-index: 1;
 }
@@ -82,7 +92,7 @@ a:hover {
 }
 
 .logopic {
-  height: 30px;
+  height: 40px;
 }
 #check {
   display: none;
@@ -91,18 +101,18 @@ a:hover {
 @media (max-width: 1000px) {
   .checkbtn {
     display: block;
-    color: #00a1ff;
+    color: var(--orange);
   }
   body {
-    background-color: #121212;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #1d2228;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23fb8122' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
     font-family: "Poppins", sans-serif;
   }
 
   nav {
     max-height: 100vh;
-    background-color: #121212;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #1d2228;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23fb8122' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
     overflow: hidden;
     z-index: 10001;
     position: fixed;
@@ -114,8 +124,8 @@ a:hover {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    background-color: #121212;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #1d2228;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23fb8122' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
     top: 80px;
     left: -100%;
     text-align: center;
@@ -156,6 +166,7 @@ a:hover {
     display: inline-block;
     padding: 0px 15px;
     font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     background: none;
     overflow: hidden;
@@ -167,7 +178,7 @@ a:hover {
   a:hover {
     transform: scale(1.25);
     z-index: 1000;
-    background: #00a1ff;
+    background: var(--orange);
     color: #fff;
     opacity: 1;
     border-radius: 5px;
@@ -210,22 +221,25 @@ section {
 }
 
 .text-container p:nth-child(1) {
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   font-size: 18px;
 }
 
 .text-container p:nth-child(2) {
   font-weight: bold;
-  letter-spacing: 3px;
-  color: #00a1ff;
+  letter-spacing: 0px;
+  color: var(--orange);
   font-size: 60px;
-  font-weight: 800;
+  text-transform: uppercase;
+  font-weight: 700;
   line-height: 30px;
 }
 
 .text-container p:nth-child(3) {
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   font-size: 18px;
 }
@@ -242,8 +256,9 @@ section {
 }
 .text-container button {
   padding: 10px 20px;
-  border-radius: 50px;
-  font-weight: 700;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
   font-size: 15px;
   outline: none;
 }
@@ -255,17 +270,19 @@ section {
   text-decoration: none;
 }
 .down-cv {
-  background-color: #00a1ff;
-  color: #121212;
-  border: none;
+  background-color: var(--bgcolor);
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 10px;
   text-decoration: none;
   display: block;
 }
 
 .text-container button:hover {
   color: #fff;
-  background-color: #008ee0;
-  transition: 0.3s ease;
+  background-color: var(--orange);
+  color: var(--bgcolor);
+  transition: 0.5s ease;
 }
 
 button:active {
@@ -283,14 +300,15 @@ button:active {
 .about-container {
   width: 80%;
   height: 470px;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   margin: 0% auto 20px auto;
   position: relative;
   justify-content: space-evenly;
   align-items: center;
-  background-color: none;
+  background-color: var(--lightbgcolor);
+  margin-bottom: 140px;
 }
 
 .about-container img {
@@ -300,8 +318,9 @@ button:active {
   width: 550px;
 }
 .about-text p:nth-child(1) {
-  color: #00a1ff;
-  font-weight: 800;
+  color: var(--orange);
+  font-weight: 600;
+  text-transform: uppercase;
   font-size: 32px;
   line-height: 0px;
   margin-top: 20px;
@@ -318,7 +337,8 @@ button:active {
 .about-text p:nth-child(3),
 .about-text p:nth-child(4) {
   color: #fff;
-  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 350;
   font-size: 15px;
   margin-top: 40px;
 }
@@ -326,16 +346,17 @@ button:active {
 .about-text button {
   padding: 10px 20px;
   border: none;
-  border-radius: 50px;
-  font-weight: 700;
+  border-radius: 5px;
+  font-weight: 600;
   font-size: 15px;
   margin-top: 20px;
   margin-right: 20px;
-  background-color: #00a1ff;
+  text-transform: uppercase;
+  background-color: var(--orange);
   color: #121212;
 }
 .about-text button:hover {
-  background-color: #008ee0;
+  background-color: var(--orange);
   color: #fff;
   transition: 0.3s ease;
 }
@@ -376,35 +397,37 @@ button:active {
 }
 .content .box .icon {
   font-size: 68px;
-  color: #00a1ff;
+  color: var(--orange);
 }
 .content .box .counter {
-  font-size: 70px;
-  font-weight: 700;
+  font-size: 90px;
+  font-weight: 600;
   color: #f2f2f2;
   font-family: "Poppins", sans-serif;
 }
 .content .box .text {
   font-weight: 600;
   font-size: 20px;
-  color: #00a1ff;
+  color: var(--orange);
 }
 
 .services {
   height: 950px;
+  margin-top: 140px;
 
-  padding: 2% 10% 0px 10%;
+  padding: 0% 10% 0px 10%;
 }
 
 .services-text p:nth-child(1) {
-  font-weight: 800;
-  color: #00a1ff;
+  font-weight: 600;
+  color: var(--orange);
+  text-transform: uppercase;
   font-size: 32px;
   line-height: 0px;
   text-align: center;
 }
 .services-text p:nth-child(2) {
-  font-weight: 600;
+  font-weight: 400;
   color: #a6a6a6;
   font-size: 15px;
   line-height: 5px;
@@ -413,6 +436,7 @@ button:active {
 }
 .services-text p:nth-child(3) {
   color: #fff;
+  font-weight: 350;
   text-align: center;
 }
 .services-text {
@@ -441,31 +465,31 @@ button:active {
 }
 
 .box-1 {
-  background-color: #1f1f1f;
+  background-color: var(--darkbgcolor);
 }
 .box-1:hover {
-  background-color: #212121;
+  background-color: var(--lightbgcolor);
   transition: 0.1s ease;
 }
 .box-2 {
-  background-color: #1f1f1f;
+  background-color: var(--darkbgcolor);
 }
 .box-2:hover {
-  background-color: #212121;
+  background-color: var(--lightbgcolor);
   transition: 0.1s ease;
 }
 .box-3 {
-  background-color: #1f1f1f;
+  background-color: var(--darkbgcolor);
 }
 .box-3:hover {
-  background-color: #212121;
+  background-color: var(--lightbgcolor);
   transition: 0.1s ease;
 }
 .box-1 span {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #00a1ff;
+  background-color: var(--orange);
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -476,7 +500,7 @@ button:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #00a1ff;
+  background-color: var(--orange);
   display: flex;
   justify-content: center;
   font-weight: 800;
@@ -487,7 +511,7 @@ button:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #00a1ff;
+  background-color: var(--orange);
   display: flex;
   justify-content: center;
   font-weight: 800;
@@ -510,7 +534,7 @@ button:active {
   text-align: center;
   width: 230px;
   margin: 0px 0px 20px 0px;
-  color: #a6a6a6;
+  color: var(--secondary);
   font-weight: 400;
   font-size: 14px;
 }
@@ -525,13 +549,13 @@ button:active {
   font-size: 14px;
   text-transform: uppercase;
 
-  background-color: #00a1ff;
+  background-color: var(--orange);
   color: #121212;
 }
 .box-1 button:hover,
 .box-2 button:hover,
 .box-3 button:hover {
-  background-color: #00a1ff;
+  background-color: var(--orange);
   transition: 0.4s ease;
   font-weight: 700;
 }
@@ -573,21 +597,22 @@ button:active {
 }
 
 footer {
-  height: 310px;
+  height: 300px;
   display: flex;
-  margin-top: 50px;
+  margin-top: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #272727;
+  background-color: var(--darkbgcolor);
 }
 
 footer p:nth-child(1) {
   font-size: 30px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--orange);
+  line-height: 40px;
 }
 footer p:nth-child(2) {
   font-size: 16px;
@@ -601,18 +626,19 @@ footer p:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #a6a6a6;
-  color: #00a1ff;
+  background-color: var(--orange);
+  color: var(--orange);
   margin: 20px 10px;
   border-radius: 50px;
 }
 
 .social-icons {
   display: flex;
-  color: #00a1ff;
+  color: var(--bgcolor);
+  margin-bottom: 40px;
 }
 .copyright {
-  color: #00a1ff;
+  color: var(--orange);
   font-size: 12px;
   font-weight: 500;
   position: absolute;
@@ -622,12 +648,12 @@ footer p:nth-child(2) {
   align-items: center;
 }
 .social-icons i {
-  color: #272727;
+  color: var(--bgcolor);
 }
 
 .social-icons a:hover,
 .a-social-b a:hover {
-  background-color: #fff;
+  background-color: var(--orange);
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   transition: all ease 0.2s;
 }
@@ -654,19 +680,19 @@ footer p:nth-child(2) {
   padding: 0px;
   margin: 0px;
   line-height: 0px;
-  background-color: #272727;
-  border: 2px solid #ffff;
+  background-color: var(--bgcolor);
+  border: 2px solid #536375;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 .a-social-b i {
-  color: #fff;
+  color: var(--orange);
   font-size: 20px;
 }
 .socialmedia {
   display: none;
 }
 .dropdown {
-  color: #00a1ff;
+  color: var(--orange);
   display: none;
 }
 
@@ -685,8 +711,9 @@ footer p:nth-child(2) {
 
 .inner h1 {
   font-size: 32px;
-  color: #00a1ff;
-  font-weight: 800;
+  color: var(--orange);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .border {
@@ -714,13 +741,13 @@ footer p:nth-child(2) {
 }
 
 .testimonial {
-  background: #1f1f1f;
+  background: var(--darkbgcolor);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 .testimonial:hover {
-  background: #212121;
+  background: var(--lightbgcolor);
 }
 
 .testimonial img {
@@ -737,11 +764,11 @@ footer p:nth-child(2) {
 }
 .test-text {
   font-size: 14px;
-  color: #a6a6a6;
+  color: var(--secondary);
 }
 
 .desig {
-  color: #00a1ff;
+  color: var(--orange);
   margin-bottom: 20px;
 }
 
@@ -771,6 +798,7 @@ footer p:nth-child(2) {
   .about-container {
     width: 90%;
     border-radius: 10px;
+    margin-bottom: 0px;
   }
   .about-container button {
     margin-right: 0px;
@@ -798,16 +826,18 @@ footer p:nth-child(2) {
   }
 
   .counter-up {
-    padding: 50px 50px 0 50px;
+    margin: 50px 50px 0 50px;
   }
 
   .counter-up .content .box {
     width: calc(50% - 30px);
     margin-bottom: 50px;
+    text-align: center;
   }
 
   .services {
     padding: 2% 5% 0px 5%;
+    margin-top: 0px;
   }
   .box-container {
     justify-content: center;
@@ -894,10 +924,11 @@ footer p:nth-child(2) {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     display: block;
-    background-color: #00a1ff;
+    color: var(--bgcolor);
+    background-color: var(--orange);
   }
   .text-container button:hover {
-    background-color: #00a1ff;
+    background-color: var(--orange);
   }
   .text-container p:nth-child(1) {
     text-align: center;
@@ -977,7 +1008,7 @@ footer p:nth-child(2) {
     padding: 0px;
     margin: 0px;
     line-height: 0px;
-    background-color: #272727;
+    background-color: var(--bgcolor);
     border: 1px solid #ffff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   }
@@ -1013,7 +1044,7 @@ footer p:nth-child(2) {
   height: 40px;
   width: 40px;
   text-align: center;
-  background-color: #00a1ff;
+  background-color: var(--orange);
   color: #121212;
   display: block;
   border-radius: 3px;
@@ -1021,7 +1052,7 @@ footer p:nth-child(2) {
 }
 
 .arrow-btn a span {
-  color: #121212;
+  color: var(--bgcolor);
   line-height: 40px;
   font-size: 25px;
 }
