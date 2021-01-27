@@ -9,3 +9,15 @@ function scrollToTop() {
   });
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
+
+// typing animation
+
+var typed = new Typed(".typing", {
+  strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+  typeSpeed: 100,
+  loop: true,
+});
+
+function themetog() {
+  document.getElementById("woosh").className = "light-theme";
+}
