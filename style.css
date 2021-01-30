@@ -9,7 +9,7 @@
   --secondary: #ababab;
   --bgcolorhoverdark: #061212;
   --bgcolorhoverlight: #d3d3d3;
-  --aboutbgdark: #1d2228;
+  --aboutbgdark: #061212;
   --aboutbglight: none;
   --overallbglight: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2300a1ff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
   --overallbgdark: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%231ab8ae' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
@@ -341,7 +341,7 @@ button:active {
   justify-content: space-evenly;
   align-items: center;
 
-  background-color: var(--divbgcolordark);
+  background-color: var(--aboutbg);
 
   margin-bottom: 140px;
 }
@@ -437,7 +437,7 @@ button:active {
 .content .box .counter {
   font-size: 90px;
   font-weight: 600;
-  color: var(--main);
+  color: var(--textcolor);
   font-family: "Poppins", sans-serif;
 }
 .content .box .text {
@@ -446,11 +446,162 @@ button:active {
   color: var(--main);
 }
 
-.services {
-  height: 950px;
+h1 {
+  text-align: center;
   margin-top: 140px;
+  margin-bottom: 50px;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--main);
+  font-weight: 600;
+}
 
-  padding: 0% 10% 0px 10%;
+.skills-area {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 200px;
+}
+
+.skill {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.skill-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--textcolor);
+}
+
+.skill-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.07);
+  height: 15px;
+  z-index: -1;
+  border-radius: 100px;
+  position: absolute;
+  margin: 0px auto;
+}
+
+.skill-fill {
+  background: var(--main);
+  height: 15px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+.skill-percent {
+  font-size: 12px;
+  padding-bottom: 1px;
+  font-weight: 650;
+  color: var(--aboutbg);
+}
+
+.one1 {
+  animation: html 2s;
+  width: 75%;
+}
+
+.two2 {
+  animation: css 2s;
+  width: 70%;
+}
+
+.three3 {
+  animation: js 2s;
+  width: 85%;
+}
+
+.four4 {
+  animation: js 2s;
+  width: 50%;
+}
+
+.five5 {
+  animation: js 2s;
+  width: 55%;
+}
+
+.six6 {
+  animation: js 2s;
+  width: 80%;
+}
+
+@keyframes one1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes two2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes three3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes four4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes five5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+@keyframes six6 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .skills-area {
+    padding: 0 5%;
+    margin: 0px 40px 100px;
+  }
+  h1 {
+    margin-top: 100px;
+  }
+  .skill-percent {
+    padding-bottom: 0.5px;
+    font-weight: 700;
+  }
+}
+
+.services {
+  height: 888px;
+  margin-top: 205px;
+
+  padding: 0px 10% 0px 10%;
 }
 
 .services-text p:nth-child(1) {
@@ -473,7 +624,7 @@ button:active {
   color: var(--textcolor);
   font-weight: 350;
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 .services-text {
   width: 100%;
@@ -501,21 +652,21 @@ button:active {
 }
 
 .box-1 {
-  background-color: var(--divbgcolordark);
+  background-color: var(--divbg);
 }
 .box-1:hover {
   background-color: var(--divbghover);
   transition: 0.1s ease;
 }
 .box-2 {
-  background-color: var(--divbgcolordark);
+  background-color: var(--divbg);
 }
 .box-2:hover {
   background-color: var(--divbghover);
   transition: 0.1s ease;
 }
 .box-3 {
-  background-color: var(--divbgcolordark);
+  background-color: var(--divbg);
 }
 .box-3:hover {
   background-color: var(--divbghover);
@@ -733,7 +884,7 @@ footer p:nth-child(2) {
 }
 
 .testimonials {
-  padding: 40px 0;
+  padding: 0px 0;
   background: none;
   text-align: center;
 }

@@ -66,7 +66,47 @@
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
   </style>
 
-  <body class="dark-theme">
+  <style>
+    :root {
+      --textcolorlight: #272727;
+      --textcolordark: #fff;
+      --orange: #1ab8ae;
+      --bgcolordark: #030a0a;
+      --bgcolorlight: #fff;
+      --divbgcolordark: #061212;
+      --divbgcolorlight: #e5e5e5;
+      --secondary: #ababab;
+      --bgcolorhoverdark: #061212;
+      --bgcolorhoverlight: #d3d3d3;
+      --aboutbgdark: #1d2228;
+      --aboutbglight: none;
+      --overallbglight: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2300a1ff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+      --overallbgdark: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%231ab8ae' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+    .dark-theme {
+      --textcolor: var(--textcolordark);
+      --main: var(--orange);
+      --bg: var(--bgcolordark);
+      --divbg: (--divbgcolordark);
+      --secondary-text: var(--secondary);
+      --divbghover: var(--bgcolorhoverdark);
+      --overallbg: var(--overallbgdark);
+      --aboutbg: var(--aboutbgdark);
+    }
+
+    .light-theme {
+      --textcolor: var(--textcolorlight);
+      --main: var(--orange);
+      --bg: var(--bgcolorlight);
+      --divbg: (--divbgcolorlight);
+      --secondary-text: var(--secondary);
+      --divbghover: var(--bgcolorhoverlight);
+      --overallbg: var(--overallbglight);
+      --aboutbg: var(--aboutbglight);
+    }
+  </style>
+
+  <body id="woosh" class="dark-theme">
     <section id="first">
       <nav>
         <input type="checkbox" id="check" />
@@ -196,6 +236,51 @@
         </div>
       </div>
     </div>
+    <h1>My Skills</h1>
+    <div class="skills-area">
+      <div class="skill">
+        <div class="skill-title">Languages (C++, Python, JavaScript)</div>
+        <div class="skill-bar"></div>
+        <div class="one1 skill-fill">
+          <span class="skill-percent">75%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">Web Development (MERN Stack)</div>
+        <div class="skill-bar"></div>
+        <div class="two2 skill-fill">
+          <span class="skill-percent">70%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">UI/UX Design</div>
+        <div class="skill-bar"></div>
+        <div class="three3 skill-fill">
+          <span class="skill-percent">85%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">Data Science</div>
+        <div class="skill-bar"></div>
+        <div class="four4 skill-fill">
+          <span class="skill-percent">50%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">Digital Marketing</div>
+        <div class="skill-bar"></div>
+        <div class="five5 skill-fill">
+          <span class="skill-percent">55%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">Leadership and Emotional Intelligence</div>
+        <div class="skill-bar"></div>
+        <div class="six6 skill-fill">
+          <span class="skill-percent">80%</span>
+        </div>
+      </div>
+    </div>
     <div class="services">
       <div class="services-text">
         <p>Projects</p>
@@ -279,17 +364,18 @@
           <div class="col">
             <div class="testimonial">
               <img
-                src="https://www.theportugalnews.com/uploads/news/Cristiano_Ronaldo_2018__cropped_.jpg"
+                src="https://media-exp1.licdn.com/dms/image/C5603AQF41IbTZ2dUFg/profile-displayphoto-shrink_800_800/0/1610895407379?e=1617235200&v=beta&t=kOAICAxph9d9BpJsdUFU085LJ-3pUXMhKxlrd1rk2cI"
                 alt=""
               />
-              <div class="name">Full Name</div>
+              <div class="name">Saunak Nag</div>
               <div class="desig">
-                <p>Lead, ABC</p>
+                <p>Founder, Canine Media Pvt. Ltd.</p>
               </div>
               <p class="test-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
+                Sharannyo is a committed individual with great knowledge about
+                the work he does. It has been a pleasure to work with as he is
+                keen on learning new methods and keeping up with the digital
+                era.
               </p>
             </div>
           </div>
@@ -349,7 +435,9 @@
       <p class="copyright">Created with 💙 by Sharannyo Basu</p>
     </footer>
     <div class="a-social-b">
-      <a href="#"><i class="far fa-sun"></i></a>
+      <aside>
+        <a id="themechanger"><i class="far fa-sun"></i></a>
+      </aside>
       <a href="https://www.linkedin.com/in/sharannyobasu/"
         ><i class="fab fa-linkedin"></i
       ></a>
@@ -368,6 +456,11 @@
           delay: 10,
           time: 1200,
         });
+      });
+    </script>
+    <script>
+      $("#themechanger").click(function () {
+        $("#woosh").toggleClass("light-theme");
       });
     </script>
   </body>
