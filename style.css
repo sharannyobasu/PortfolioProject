@@ -1,40 +1,63 @@
 :root {
-  --textcolorlight: #272727;
+  --white: #ffffff;
+  --textcolorlight: #06090f;
   --textcolordark: #fff;
-  --orange: #1ab8ae;
-  --bgcolordark: #030a0a;
+  --maincolourdark: #4285f4;
+  --maincolourlight: #4285f4;
+  --bgcolordark: #06090f;
   --bgcolorlight: #fff;
-  --divbgcolordark: #061212;
+  --divbgcolordark: #091221;
   --divbgcolorlight: #e5e5e5;
   --secondary: #ababab;
-  --bgcolorhoverdark: #061212;
+  --bgcolorhoverdark: #091221;
   --bgcolorhoverlight: #d3d3d3;
-  --aboutbgdark: #061212;
+  --aboutbgdark: #091221;
+  --staticondark: #4285f4;
+  --staticonlight: #06090f;
+  --stattextdark: #ffffff;
+  --stattextlight: #4285f4;
   --aboutbglight: none;
-  --overallbglight: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2300a1ff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-  --overallbgdark: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%231ab8ae' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+  --overallbglight: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zm20.97 0l9.315 9.314-1.414 1.414L34.828 0h2.83zM22.344 0L13.03 9.314l1.414 1.414L25.172 0h-2.83zM32 0l12.142 12.142-1.414 1.414L30 .828 17.272 13.556l-1.414-1.414L28 0h4zM.284 0l28 28-1.414 1.414L0 2.544V0h.284zM0 5.373l25.456 25.455-1.414 1.415L0 8.2V5.374zm0 5.656l22.627 22.627-1.414 1.414L0 13.86v-2.83zm0 5.656l19.8 19.8-1.415 1.413L0 19.514v-2.83zm0 5.657l16.97 16.97-1.414 1.415L0 25.172v-2.83zM0 28l14.142 14.142-1.414 1.414L0 30.828V28zm0 5.657L11.314 44.97 9.9 46.386l-9.9-9.9v-2.828zm0 5.657L8.485 47.8 7.07 49.212 0 42.143v-2.83zm0 5.657l5.657 5.657-1.414 1.415L0 47.8v-2.83zm0 5.657l2.828 2.83-1.414 1.413L0 53.456v-2.83zM54.627 60L30 35.373 5.373 60H8.2L30 38.2 51.8 60h2.827zm-5.656 0L30 41.03 11.03 60h2.828L30 43.858 46.142 60h2.83zm-5.656 0L30 46.686 16.686 60h2.83L30 49.515 40.485 60h2.83zm-5.657 0L30 52.343 22.343 60h2.83L30 55.172 34.828 60h2.83zM32 60l-2-2-2 2h4zM59.716 0l-28 28 1.414 1.414L60 2.544V0h-.284zM60 5.373L34.544 30.828l1.414 1.415L60 8.2V5.374zm0 5.656L37.373 33.656l1.414 1.414L60 13.86v-2.83zm0 5.656l-19.8 19.8 1.415 1.413L60 19.514v-2.83zm0 5.657l-16.97 16.97 1.414 1.415L60 25.172v-2.83zM60 28L45.858 42.142l1.414 1.414L60 30.828V28zm0 5.657L48.686 44.97l1.415 1.415 9.9-9.9v-2.828zm0 5.657L51.515 47.8l1.414 1.413 7.07-7.07v-2.83zm0 5.657l-5.657 5.657 1.414 1.415L60 47.8v-2.83zm0 5.657l-2.828 2.83 1.414 1.413L60 53.456v-2.83zM39.9 16.385l1.414-1.414L30 3.658 18.686 14.97l1.415 1.415 9.9-9.9 9.9 9.9zm-2.83 2.828l1.415-1.414L30 9.313 21.515 17.8l1.414 1.413 7.07-7.07 7.07 7.07zm-2.827 2.83l1.414-1.416L30 14.97l-5.657 5.657 1.414 1.415L30 17.8l4.243 4.242zm-2.83 2.827l1.415-1.414L30 20.626l-2.828 2.83 1.414 1.414L30 23.456l1.414 1.414zM56.87 59.414L58.284 58 30 29.716 1.716 58l1.414 1.414L30 32.544l26.87 26.87z' fill='%234285f4' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  --overallbgdark: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zm20.97 0l9.315 9.314-1.414 1.414L34.828 0h2.83zM22.344 0L13.03 9.314l1.414 1.414L25.172 0h-2.83zM32 0l12.142 12.142-1.414 1.414L30 .828 17.272 13.556l-1.414-1.414L28 0h4zM.284 0l28 28-1.414 1.414L0 2.544V0h.284zM0 5.373l25.456 25.455-1.414 1.415L0 8.2V5.374zm0 5.656l22.627 22.627-1.414 1.414L0 13.86v-2.83zm0 5.656l19.8 19.8-1.415 1.413L0 19.514v-2.83zm0 5.657l16.97 16.97-1.414 1.415L0 25.172v-2.83zM0 28l14.142 14.142-1.414 1.414L0 30.828V28zm0 5.657L11.314 44.97 9.9 46.386l-9.9-9.9v-2.828zm0 5.657L8.485 47.8 7.07 49.212 0 42.143v-2.83zm0 5.657l5.657 5.657-1.414 1.415L0 47.8v-2.83zm0 5.657l2.828 2.83-1.414 1.413L0 53.456v-2.83zM54.627 60L30 35.373 5.373 60H8.2L30 38.2 51.8 60h2.827zm-5.656 0L30 41.03 11.03 60h2.828L30 43.858 46.142 60h2.83zm-5.656 0L30 46.686 16.686 60h2.83L30 49.515 40.485 60h2.83zm-5.657 0L30 52.343 22.343 60h2.83L30 55.172 34.828 60h2.83zM32 60l-2-2-2 2h4zM59.716 0l-28 28 1.414 1.414L60 2.544V0h-.284zM60 5.373L34.544 30.828l1.414 1.415L60 8.2V5.374zm0 5.656L37.373 33.656l1.414 1.414L60 13.86v-2.83zm0 5.656l-19.8 19.8 1.415 1.413L60 19.514v-2.83zm0 5.657l-16.97 16.97 1.414 1.415L60 25.172v-2.83zM60 28L45.858 42.142l1.414 1.414L60 30.828V28zm0 5.657L48.686 44.97l1.415 1.415 9.9-9.9v-2.828zm0 5.657L51.515 47.8l1.414 1.413 7.07-7.07v-2.83zm0 5.657l-5.657 5.657 1.414 1.415L60 47.8v-2.83zm0 5.657l-2.828 2.83 1.414 1.413L60 53.456v-2.83zM39.9 16.385l1.414-1.414L30 3.658 18.686 14.97l1.415 1.415 9.9-9.9 9.9 9.9zm-2.83 2.828l1.415-1.414L30 9.313 21.515 17.8l1.414 1.413 7.07-7.07 7.07 7.07zm-2.827 2.83l1.414-1.416L30 14.97l-5.657 5.657 1.414 1.415L30 17.8l4.243 4.242zm-2.83 2.827l1.415-1.414L30 20.626l-2.828 2.83 1.414 1.414L30 23.456l1.414 1.414zM56.87 59.414L58.284 58 30 29.716 1.716 58l1.414 1.414L30 32.544l26.87 26.87z' fill='%234285f4' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 .dark-theme {
   --textcolor: var(--textcolordark);
-  --main: var(--orange);
+  --main: var(--maincolourdark);
   --bg: var(--bgcolordark);
   --divbg: (--divbgcolordark);
   --secondary-text: var(--secondary);
   --divbghover: var(--bgcolorhoverdark);
   --overallbg: var(--overallbgdark);
   --aboutbg: var(--aboutbgdark);
+  --fontweightabouttext: 350;
+  --staticon: var(--staticondark);
+  --servicesnumber: var(--divbghover);
+  --servicestitle: var(--white);
+  --servicesboxtext: var(--secondary);
+  --servicesbuttontext: var(--bgcolordark);
+  --testdesig: var(--maincolourdark);
+  --footersmall: var(--divbgcolorlight);
 }
 
 .light-theme {
   --textcolor: var(--textcolorlight);
-  --main: var(--orange);
+  --main: var(--maincolourlight);
   --bg: var(--bgcolorlight);
   --divbg: (--divbgcolorlight);
   --secondary-text: var(--secondary);
-  --divbghover: var(--bgcolorhoverlight);
+  --divbghover: #f0f3ff;
   --overallbg: var(--overallbglight);
   --aboutbg: var(--aboutbglight);
+  --fontweightabouttext: 400;
+  --staticon: var(--staticonlight);
+  --servicesnumber: var(--white);
+  --servicestitle: var(--maincolourdark);
+  --servicesboxtext: var(--bgcolordark);
+  --servicesbuttontext: var(--white);
+  --testdesig: #808080;
+  --footersmall: #808080;
 }
+
 body {
   background-color: var(--bg);
   background-image: var(--overallbg);
@@ -61,7 +84,7 @@ nav {
   line-height: 80px;
   padding: 2 80px;
   font-weight: bold;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .logopic {
@@ -83,7 +106,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--main);
+  color: var(--testdesig);
   font-size: 14px;
   padding: 20px 13px;
   transition: 0.1s ease;
@@ -95,7 +118,7 @@ nav ul li a {
 a:active,
 a:hover {
   text-decoration: none;
-  color: var(--bgcolorlight);
+  color: var(--servicestitle);
   transform: scale(1.1);
   transition: 0.2s ease-out;
   font-weight: 600;
@@ -189,6 +212,13 @@ a:hover {
   .logopic {
     height: 35px;
   }
+  .logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 2 80px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
   nav ul li a {
     position: relative;
     display: inline-block;
@@ -207,7 +237,7 @@ a:hover {
     transform: scale(1.25);
     z-index: 1000;
     background: var(--main);
-    color: var(--textcolor);
+    color: var(--white);
     opacity: 1;
     border-radius: 5px;
   }
@@ -311,21 +341,15 @@ section {
 }
 
 .text-container button:hover {
-  color: var(--textcolor);
+  color: #fff;
   background-color: var(--main);
-  color: var(--bg);
-  transition: 0.5s ease;
-  font-weight: 600;
-}
-
-button:active {
-  transform: scale(1.1);
   transition: 0.3s ease;
 }
+
 .model {
-  height: 75%;
+  height: 67%;
   position: absolute;
-  top: 14%;
+  top: 12%;
   left: 80%;
   transform: translateX(-70%);
 }
@@ -341,7 +365,7 @@ button:active {
   justify-content: space-evenly;
   align-items: center;
 
-  background-color: var(--aboutbg);
+  background-color: var(--divbghover);
 
   margin-bottom: 140px;
 }
@@ -358,14 +382,14 @@ button:active {
   text-transform: uppercase;
   font-size: 32px;
   line-height: 0px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .about-text p:nth-child(2) {
   color: #183d5d;
   font-weight: bold;
   font-size: 13px;
-  line-height: 5px;
+  line-height: 0px;
   opacity: 0;
 }
 
@@ -373,13 +397,14 @@ button:active {
 .about-text p:nth-child(4) {
   color: var(--textcolor);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 350;
+  font-weight: 400;
   font-size: 15px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
-.about-text button {
+.about-text a button {
   padding: 10px 20px;
+  text-decoration: none;
   border: none;
   border-radius: 5px;
   font-weight: 600;
@@ -388,12 +413,17 @@ button:active {
   margin-right: 20px;
   text-transform: uppercase;
   background-color: var(--main);
-  color: #121212;
+  color: #fff;
 }
 .about-text button:hover {
   background-color: var(--main);
   color: var(--bgcolordark);
   transition: 0.3s ease;
+}
+
+.about-text a {
+  text-decoration: none;
+  color: var(--divbg);
 }
 
 .counter-up {
@@ -477,7 +507,7 @@ h1 {
 .skill-bar {
   width: 100%;
   background: rgba(255, 255, 255, 0.07);
-  height: 15px;
+  height: 20px;
   z-index: -1;
   border-radius: 100px;
   position: absolute;
@@ -486,7 +516,7 @@ h1 {
 
 .skill-fill {
   background: var(--main);
-  height: 15px;
+  height: 20px;
   border-radius: 100px;
   display: flex;
   justify-content: flex-end;
@@ -496,10 +526,10 @@ h1 {
 }
 
 .skill-percent {
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 1px;
   font-weight: 650;
-  color: var(--aboutbg);
+  color: var(--servicesbuttontext);
 }
 
 .one1 {
@@ -636,9 +666,8 @@ h1 {
 .box-3 {
   width: 300px;
   height: 320px;
-  background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -652,25 +681,25 @@ h1 {
 }
 
 .box-1 {
-  background-color: var(--divbg);
+  background-color: var(--divbghover);
 }
 .box-1:hover {
   background-color: var(--divbghover);
-  transition: 0.1s ease;
+  transition: 0.5s ease;
 }
 .box-2 {
-  background-color: var(--divbg);
+  background-color: var(--divbghover);
 }
 .box-2:hover {
   background-color: var(--divbghover);
-  transition: 0.1s ease;
+  transition: 0.5s ease;
 }
 .box-3 {
-  background-color: var(--divbg);
+  background-color: var(--divbghover);
 }
 .box-3:hover {
   background-color: var(--divbghover);
-  transition: 0.1s ease;
+  transition: 0.5s ease;
 }
 .box-1 span {
   width: 40px;
@@ -682,6 +711,7 @@ h1 {
   font-weight: bold;
   align-items: center;
   margin-bottom: 40px;
+  color: var(--servicesnumber);
 }
 .box-2 span {
   width: 40px;
@@ -693,6 +723,7 @@ h1 {
   font-weight: 800;
   align-items: center;
   margin-bottom: 40px;
+  color: var(--servicesnumber);
 }
 .box-3 span {
   width: 40px;
@@ -704,11 +735,12 @@ h1 {
   font-weight: 800;
   align-items: center;
   margin-bottom: 40px;
+  color: var(--servicesnumber);
 }
 .box-1 p:nth-child(2),
 .box-2 p:nth-child(2),
 .box-3 p:nth-child(2) {
-  color: var(--textcolor);
+  color: var(--servicestitle);
   font-size: 20px;
   line-height: 0px;
   font-weight: 700;
@@ -721,7 +753,7 @@ h1 {
   text-align: center;
   width: 230px;
   margin: 0px 0px 20px 0px;
-  color: var(--secondary-text);
+  color: var(--servicesboxtext);
   font-weight: 400;
   font-size: 14px;
 }
@@ -737,7 +769,7 @@ h1 {
   text-transform: uppercase;
 
   background-color: var(--main);
-  color: #121212;
+  color: var(--servicesbuttontext);
 }
 .box-1 button:hover,
 .box-2 button:hover,
@@ -791,7 +823,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: var(--divbgcolordark);
+  background-color: var(--divbghover);
 }
 
 footer p:nth-child(1) {
@@ -803,7 +835,7 @@ footer p:nth-child(1) {
 }
 footer p:nth-child(2) {
   font-size: 16px;
-  color: #a6a6a6;
+  color: var(--footersmall);
   width: 600px;
   text-align: center;
 }
@@ -847,7 +879,7 @@ footer p:nth-child(2) {
 
 .social-icons a:hover i,
 .a-social-b a:hover i {
-  color: #272727;
+  color: var(--servicesnumber);
   transition: all ease 0.3s;
 }
 
@@ -928,10 +960,9 @@ footer p:nth-child(2) {
 }
 
 .testimonial {
-  background: var(--divbgcolordark);
+  background: var(--divbghover);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 .testimonial:hover {
   background: var(--divbghover);
@@ -947,15 +978,15 @@ footer p:nth-child(2) {
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
-  color: var(--textcolor);
+  color: var(--servicestitle);
 }
 .test-text {
   font-size: 14px;
-  color: var(--secondary-text);
+  color: var(--textcolor);
 }
 
 .desig {
-  color: var(--main);
+  color: var(--testdesig);
   margin-bottom: 20px;
 }
 
