@@ -1,4 +1,4 @@
-# PortfolioProject
+# Portfolio Project
 
 ### This responsive website is a representation of my background, skills, projects done till date and testimonials from people with whom I have worked in the past.
 ### If you like this project, do ⭐ this repository
