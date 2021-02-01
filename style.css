@@ -757,6 +757,11 @@ h1 {
   font-weight: 400;
   font-size: 14px;
 }
+.box-1 a,
+.box-2 a,
+.box-3 a {
+  text-decoration: none;
+}
 
 .box-1 button,
 .box-2 button,
@@ -776,7 +781,7 @@ h1 {
 .box-3 button:hover {
   background-color: var(--main);
   transition: 0.4s ease;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .contact-me {
