@@ -652,7 +652,7 @@ h1 {
 }
 .services-text p:nth-child(3) {
   color: var(--textcolor);
-  font-weight: 350;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 50px;
 }
