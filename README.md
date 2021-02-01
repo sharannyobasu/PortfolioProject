@@ -23,6 +23,32 @@
 3. Background colour : #091221
 4. Grey : #ababab
 
+### Screenshots : 
+
+![alt text](https://github.com/sharannyobasu/PortfolioProject/blob/master/Screenshots/Screenshot%20(18).png)
+
+---
+
+![alt text](https://github.com/sharannyobasu/PortfolioProject/blob/master/Screenshots/Screenshot%20(25).png)
+
+---
+
+![alt text](https://github.com/sharannyobasu/PortfolioProject/blob/master/Screenshots/Screenshot%20(20).png)
+
+---
+
+![alt text](https://github.com/sharannyobasu/PortfolioProject/blob/master/Screenshots/Screenshot%20(27).png)
+
+---
+
+![alt text](https://github.com/sharannyobasu/PortfolioProject/blob/master/Screenshots/Screenshot%20(22).png)
+
+--- 
+
+![alt text](https://github.com/sharannyobasu/PortfolioProject/blob/master/Screenshots/Screenshot%20(29).png)
+
+---
+
 #### Resources used : 
 
 - [Design Inspiration ⭐⭐](https://www.youtube.com/watch?v=KgRENOnSCxE) 
